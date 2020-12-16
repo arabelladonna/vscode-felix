@@ -1,0 +1,42 @@
+{
+    "name": "felix-syntax",
+    "displayName": "Felix Syntax Highlighting",
+    "description": "Syntax highlighting for the Felix programming language.",
+    "publisher": "Garrett Bluma, slightly modified for VSCode use by Ari Bellamy",
+    "version": "0.1.0",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.22.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": [
+        "Felix",
+        "syntax",
+        "highlight"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "felix",
+                "aliases": [
+                    "Felix",
+                    "felix"
+                ],
+                "extensions": [
+                    ".flx",
+                    ".fdoc"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "felix",
+                "scopeName": "source.flx",
+                "path": "./syntaxes/felix.tmLanguage.json"
+            }
+        ]
+    }
+}
